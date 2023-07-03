@@ -1,0 +1,58 @@
+Script started on Sun 26 Apr 2015 04:04:40 PM EDT
+*?\a)//g'a|Bcol~-bo>usimplescript.txt-mancsleepescript.txt | perl -pe 's/\e([^\[\]]|\[.*?[a-zA-Z]|\].*
+make
+gcc  -pthread -o A5 A5.c
+t@t-VirtualBox:~/Documents/school/A5$ ./A5 10
+Sun Apr 26 16:04:56 2015
+Simulation has started...
+Free buffer size 2048KB
+-------------------------
+Printer has started...
+Sun Apr 26 16:04:56 2015 - Job 0 of size 591 KB arrived.
+Sun Apr 26 16:04:56 2015 - Job 0 stored in buffer.
+Sun Apr 26 16:04:56 2015 - Job 0 starts printing.
+Sun Apr 26 16:04:56 2015 - Job 1 of size 577 KB arrived.
+Sun Apr 26 16:04:56 2015 - Job 1 stored in buffer.
+Sun Apr 26 16:04:56 2015 - Job 2 of size 876 KB arrived.
+Sun Apr 26 16:04:56 2015 - Job 2 stored in buffer.
+Sun Apr 26 16:04:56 2015 - Job 3 of size 347 KB arrived.
+Sun Apr 26 16:04:56 2015 - Insufficient buffer space for Job 3.
+Sun Apr 26 16:05:01 2015 - Job 0 completed printing.
+Sun Apr 26 16:05:01 2015 - Job 1 starts printing.
+Sun Apr 26 16:05:01 2015 - Insufficient buffer space for Job 3.
+Sun Apr 26 16:05:04 2015 - Job 3 stored in buffer.
+Sun Apr 26 16:05:04 2015 - Job 4 of size 69 KB arrived.
+Sun Apr 26 16:05:04 2015 - Job 4 stored in buffer.
+Sun Apr 26 16:05:04 2015 - Job 5 of size 683 KB arrived.
+Sun Apr 26 16:05:06 2015 - Job 1 completed printing.
+Sun Apr 26 16:05:06 2015 - Job 2 starts printing.
+Sun Apr 26 16:05:06 2015 - Insufficient buffer space for Job 5.
+Sun Apr 26 16:05:12 2015 - Job 5 stored in buffer.
+Sun Apr 26 16:05:12 2015 - Job 6 of size 542 KB arrived.
+Sun Apr 26 16:05:14 2015 - Job 2 completed printing.
+Sun Apr 26 16:05:14 2015 - Job 3 starts printing.
+Sun Apr 26 16:05:14 2015 - Insufficient buffer space for Job 6.
+Sun Apr 26 16:05:17 2015 - Job 3 completed printing.
+Sun Apr 26 16:05:17 2015 - Job 4 starts printing.
+Sun Apr 26 16:05:17 2015 - Job 4 completed printing.
+Sun Apr 26 16:05:17 2015 - Job 5 starts printing.
+Sun Apr 26 16:05:19 2015 - Job 6 stored in buffer.
+Sun Apr 26 16:05:19 2015 - Job 7 of size 855 KB arrived.
+Sun Apr 26 16:05:19 2015 - Insufficient buffer space for Job 7.
+Sun Apr 26 16:05:23 2015 - Job 5 completed printing.
+Sun Apr 26 16:05:23 2015 - Job 6 starts printing.
+Sun Apr 26 16:05:27 2015 - Job 7 stored in buffer.
+Sun Apr 26 16:05:27 2015 - Job 8 of size 278 KB arrived.
+Sun Apr 26 16:05:27 2015 - Job 8 stored in buffer.
+Sun Apr 26 16:05:27 2015 - Job 9 of size 557 KB arrived.
+Sun Apr 26 16:05:27 2015 - Insufficient buffer space for Job 9.
+Sun Apr 26 16:05:28 2015 - Job 6 completed printing.
+Sun Apr 26 16:05:28 2015 - Job 7 starts printing.
+Sun Apr 26 16:05:32 2015 - Job 9 stored in buffer.
+Sun Apr 26 16:05:36 2015 - Job 7 completed printing.
+Sun Apr 26 16:05:36 2015 - Job 8 starts printing.
+Sun Apr 26 16:05:38 2015 - Job 8 completed printing.
+Sun Apr 26 16:05:38 2015 - Job 9 starts printing.
+Sun Apr 26 16:05:43 2015 - Job 9 completed printing.
+t@t-VirtualBox:~/Documents/school/A5$
+Script done on Sun 26 Apr 2015 04:05:49 PM EDT

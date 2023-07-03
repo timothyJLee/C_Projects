@@ -1,0 +1,8 @@
+
+
+Client :	
+	gcc -o client.o -I -c -g -Wall client.c; \
+	gcc -o Client client.o -I -Wl,-rpath,/usr/local/lib; >/Client 
+
+clean:
+	rm -f *.o;

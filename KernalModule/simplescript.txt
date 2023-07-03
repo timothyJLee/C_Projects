@@ -1,0 +1,21 @@
+Script started on Fri 10 Apr 2015 04:13:42 PM EDT
+tim@tim-VirtualBox:~/Documents/school$ make
+make -C /lib/modules/3.13.0-49-generic/build M="/home/tim/Documents/school" modules
+make[1]: Entering directory `/usr/src/linux-headers-3.13.0-49-generic'
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: Leaving directory `/usr/src/linux-headers-3.13.0-49-generic'
+tim@tim-VirtualBox:~/Documents/school$ sudo insmod simple.ko
+[sudo] password for tim:
+tim@tim-VirtualBox:~/Documents/school$ dmesginsmod simple.ko
+[ 3185.647129] Loading Module
+tim@tim-VirtualBox:~/Documents/school$ sudorrmmod simple
+tim@tim-VirtualBox:~/Documents/school$ dmesg
+[ 3185.647129] Loading Module
+[ 3231.106932] Removing Module
+tim@tim-VirtualBox:~/Documents/school$ sudo dmesg -c
+[ 3185.647129] Loading Module
+[ 3231.106932] Removing Module
+tim@tim-VirtualBox:~/Documents/school$
+
+Script done on Fri 10 Apr 2015 04:15:41 PM EDT

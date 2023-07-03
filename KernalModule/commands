@@ -1,0 +1,14 @@
+
+
+make
+
+sudo insmod simple.ko
+sudo insmod ProjectA4.ko
+
+dmesg
+
+sudo rmmod simple
+
+sudo dmesg-c
+
+lsmod

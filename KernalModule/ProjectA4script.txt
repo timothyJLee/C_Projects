@@ -1,0 +1,102 @@
+Script started on Sun 12 Apr 2015 01:52:05 PM EDT
+makegi-cualBudoodDProjectA4sudoormmoddProjectA4c
+make -C /lib/modules/3.13.0-49-generic/build M="/home/t/Documents/school" modules
+make[1]: Entering directory `/usr/src/linux-headers-3.13.0-49-generic'
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: Leaving directory `/usr/src/linux-headers-3.13.0-49-generic'
+t@t-VirtualBox:~/Documents/school$ lsmod
+Module			Size  Used by
+vboxsf		       39641  0
+nls_utf8	       12557  1
+isofs		       39837  1
+bnep		       19624  2
+rfcomm		       69160  0
+bluetooth	      391136  10 bnep,rfcomm
+vboxvideo	       12658  0
+snd_intel8x0	       38153  2
+snd_ac97_codec	      130285  1 snd_intel8x0
+ac97_bus	       12730  1 snd_ac97_codec
+snd_pcm 	      102099  2 snd_ac97_codec,snd_intel8x0
+snd_page_alloc	       18710  2 snd_intel8x0,snd_pcm
+snd_seq_midi	       13324  0
+snd_seq_midi_event     14899  1 snd_seq_midi
+snd_rawmidi	       30144  1 snd_seq_midi
+joydev		       17381  0
+vboxguest	      235814  7 vboxsf
+snd_seq 	       61560  2 snd_seq_midi_event,snd_seq_midi
+drm		      303102  1 vboxvideo
+snd_seq_device	       14497  3 snd_seq,snd_rawmidi,snd_seq_midi
+snd_timer	       29482  2 snd_pcm,snd_seq
+snd		       69322  12 snd_ac97_codec,snd_intel8x0,snd_timer,snd_pcm,snd_seq,snd_rawmidi,snd_seq_device,snd_seq_midi
+ppdev		       17671  0
+serio_raw	       13462  0
+parport_pc	       32701  0
+lp		       17759  0
+i2c_piix4	       22155  0
+soundcore	       12680  1 snd
+parport 	       42348  3 lp,ppdev,parport_pc
+mac_hid 	       13205  0
+hid_generic	       12548  0
+usbhid		       52659  0
+hid		      106148  2 hid_generic,usbhid
+psmouse 	      106714  0
+ahci		       29915  2
+libahci 	       32716  1 ahci
+pata_acpi	       13038  0
+e1000		      145174  0
+t@t-VirtualBox:~/Documents/school$ sudoiinsmod ProjectA4.ko
+[sudo] password for t:
+t@t-VirtualBox:~/Documents/school$ lsmod
+Module			Size  Used by
+ProjectA4	       12466  0
+vboxsf		       39641  0
+nls_utf8	       12557  1
+isofs		       39837  1
+bnep		       19624  2
+rfcomm		       69160  0
+bluetooth	      391136  10 bnep,rfcomm
+vboxvideo	       12658  0
+snd_intel8x0	       38153  2
+snd_ac97_codec	      130285  1 snd_intel8x0
+ac97_bus	       12730  1 snd_ac97_codec
+snd_pcm 	      102099  2 snd_ac97_codec,snd_intel8x0
+snd_page_alloc	       18710  2 snd_intel8x0,snd_pcm
+snd_seq_midi	       13324  0
+snd_seq_midi_event     14899  1 snd_seq_midi
+snd_rawmidi	       30144  1 snd_seq_midi
+joydev		       17381  0
+vboxguest	      235814  7 vboxsf
+snd_seq 	       61560  2 snd_seq_midi_event,snd_seq_midi
+drm		      303102  1 vboxvideo
+snd_seq_device	       14497  3 snd_seq,snd_rawmidi,snd_seq_midi
+snd_timer	       29482  2 snd_pcm,snd_seq
+snd		       69322  12 snd_ac97_codec,snd_intel8x0,snd_timer,snd_pcm,snd_seq,snd_rawmidi,snd_seq_device,snd_seq_midi
+ppdev		       17671  0
+serio_raw	       13462  0
+parport_pc	       32701  0
+lp		       17759  0
+i2c_piix4	       22155  0
+soundcore	       12680  1 snd
+parport 	       42348  3 lp,ppdev,parport_pc
+mac_hid 	       13205  0
+hid_generic	       12548  0
+usbhid		       52659  0
+hid		      106148  2 hid_generic,usbhid
+psmouse 	      106714  0
+ahci		       29915  2
+libahci 	       32716  1 ahci
+pata_acpi	       13038  0
+e1000		      145174  0
+t@t-VirtualBox:~/Documents/school$ sudo rmmod ProjectA4
+t@t-VirtualBox:~/Documents/school$ sudo dmesg -c
+[ 8050.421473] Loading Module
+[ 8050.421483] Student Number: 760120495 Course Credit 2 Grade 4
+[ 8050.421484] Student Number: 760120495 Course Credit 3 Grade 1
+[ 8050.421485] Student Number: 760120495 Course Credit 1 Grade 0
+[ 8050.421485] Student Number: 760120495 Course Credit 2 Grade 0
+[ 8050.421486] Student Number: 760120495 Course Credit 2 Grade 1
+[ 8083.945334] Removing Module
+t@t-VirtualBox:~/Documents/school$ 
+
+Script done on Sun 12 Apr 2015 01:53:27 PM EDT
